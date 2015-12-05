@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bacon search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lib/Bacon-0.7.73.min.js"/>
+    <script src="lib/jquery-2.1.1.min.js"/>
+    <script src="code.js"/>
+</head>
+<body>
+    <h1>Bacon search</h1>
+    <form>
+        <input name=query>
+        <label>
+            Section:
+            <select>
+            </select>
+        </label>
+        <article class="search-status">
+            <header><h2>Result:</h2></header>
+            <section>
+                <span class="searching">Söker...</span>
+                <span class="no-result">Inga träffar.</span>
+                <ul class="hits"></ul>
+                <span class="error">Ett fel uppstod: <code></code></span>
+            </section>
+        </article>
+    </form>
+</body>
+</html>
