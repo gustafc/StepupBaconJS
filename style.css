@@ -1,5 +1,5 @@
 .search-status:not([data-status]) > header { display: none; }
 .search-status:not([data-status=searching]) > section > .searching { display: none; }
 .search-status:not([data-status=no-result]) > section > .no-result { display: none; }
-.search-status:not([data-status=hits])      > section > .hits { display: none; }
+.search-status:not([data-status=result])    > section > .result { display: none; }
 .search-status:not([data-status=error])     > section > .error { display: none; }

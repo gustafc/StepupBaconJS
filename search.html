@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bacon search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="lib/Bacon-0.7.73.min.js"></script>
+    <script src="backend.js"></script>
+    <script src="search.js"></script>
+</head>
+<body>
+    <h1>Bacon search</h1>
+    <form>
+        <input name=query>
+        <select name=section>
+            <option value="">Alla avdelningar</option>
+            <option value="vegetables">Grönsaker</option>
+            <option value="funghi">Svamp</option>
+            <option value="meat">Kött</option>
+        </select>
+        <article class="search-status">
+            <header><h2>Resultat:</h2></header>
+            <section>
+                <span class="searching">Söker...</span>
+                <span class="no-result">Inga träffar för <q></q>.</span>
+                <ul class="result"></ul>
+                <span class="error">Ett fel uppstod: <code class="error-message"></code></span>
+            </section>
+        </article>
+    </form>
+</body>
+</html>
